@@ -1,0 +1,24 @@
+﻿@model List<Lab03.Models.YourModel>
+
+    <head> 
+        <h1>Student Name: Erick Ovando Perez</h1>
+        <h2>Student ID: 200579494</h2>
+    </head>
+
+<table>
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.pid</td>
+                <td>@item.productname</td>
+            </tr>
+        }
+    </tbody>
+</table>
